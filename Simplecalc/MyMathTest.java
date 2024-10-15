@@ -1,6 +1,6 @@
 /**
  * Testprogramm fuer die Klasse MyMath.
- * Erweitert um Tests um die neuen Klassenfunktionen zu demonstrieren. 
+ * Erweitert Tests, um die neuen Klassenfunktionen zu demonstrieren.
  * @author Maximilian Wagner (wagnerm@th-brandenburg.de)
  * @version 1.00, 10/2024
  */
@@ -23,7 +23,7 @@ public class MyMathTest
         System.out.println("Summe von -1,-2,3: "
                 + MyMath.summiere3Zahlen(-1, -2, 3));
 
-        // Hier folgen Tests meines Simplen Taschenrechners
+        // Hier folgen Tests meines simplen Taschenrechners
 
 		System.out.println("Hier folgen die neuen Tests:\n");
 
@@ -36,8 +36,8 @@ public class MyMathTest
 		System.out.println("Multiplikation von 21, 15: "
 		+ MyMath.mult2Integers(21, 15));
 
-		// Hier teste ich ob der Fall des Teilens durch 0 berucksichtigt wird
-		// Ich returne einfachheitshalber 0 falls dies der Fall ist.
+		// Hier teste ich, ob der Fall des Teilens durch 0 berucksichtigt wird
+		// Ich returne einfachheitshalber 0, falls dies der Fall ist.
 		System.out.println("Division von 21, 0: "
 		+ MyMath.div2Integers(21, 0));
 
