@@ -1,0 +1,44 @@
+
+/*
+
+Pseudo Code für die Addition von zwei Zahlen
+Maximilian Wangner, 11/2024
+
+*/
+
+
+Function addiereZahlen(zahl1, zahl2):
+    // 1. Zahlen als Strings behandeln, damit wir ziffernweise darauf zugreifen können
+    zahl1 = convertToString(zahl1)
+    zahl2 = convertToString(zahl2)
+
+    // 2. Zahlen gleich lang machen:  Mit führenden Nullen auffüllen, wenn nötig
+    while length(zahl1) < length(zahl2):
+        zahl1 = "0" + zahl1
+    while length(zahl2) < length(zahl1):
+        zahl2 = "0" + zahl2
+
+    // 3. Ziffernweise von rechts nach links addieren
+    // Beginnend bei der niedrigsten Stelle von ganz rechts
+    // in java oder C wuerde der loop so aussehen:
+    // for i = (length(number1) - 1); i >= 0; i--:
+    for i from (length(zahl1) - 1) to 0 step -1:
+        ziffer1 = convertToInteger(zahl1[i])
+        ziffer2 = convertToInteger(zahl2[i])
+        summe = ziffer1 + ziffer2 + übertrag
+
+        // Bestimme neuen Übertrag und aktuellen Wert
+        // - Wenn die Summe >= 10 ist, berechne den Übertrag und den aktuellen Wert.
+        // - Andernfalls bleibt der Übertrag 0.
+        übertrag = summe / 10  // Ganzzahldivision
+        aktuelleZiffer = summe % 10  // Modulo
+
+        // Füge die aktuelle Ziffer vorne an das Ergebnis an
+        ergebnis = convertToString(aktuelleZiffer) + ergebnis
+
+    // 4. Falls noch ein Übertrag übrig ist, füge ihn hinzu
+    // Wenn der Übertrag nach der höchsten Stelle noch > 0 ist, wird er vorne angefügt.
+    if übertrag > 0:
+        ergebnis = convertToString(übertrag) + ergebnis
+
+    return ergebnis
