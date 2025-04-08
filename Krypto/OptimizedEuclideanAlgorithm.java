@@ -1,3 +1,5 @@
+package Krypto;
+
 import java.lang.Math; // Math.abs is used
 
 public class OptimizedEuclideanAlgorithm {
