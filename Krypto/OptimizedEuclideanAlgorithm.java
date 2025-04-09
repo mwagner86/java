@@ -37,8 +37,8 @@ public class OptimizedEuclideanAlgorithm {
         System.out.println("Der ggT von " + num1 + " und " + num2 + " ist: " + result1); // Erwartet: 3
 
         // Weiteres Beispiel
-        int num3 = 77;
-        int num4 = 42;
+        int num3 = 72;
+        int num4 = -23;
         int result2 = gcd(num3, num4);
         System.out.println("Der ggT von " + num3 + " und " + num4 + " ist: " + result2); // Erwartet: 7
 
@@ -63,5 +63,10 @@ public class OptimizedEuclideanAlgorithm {
         int num12 = 0;
         int result6 = gcd(num11, num12);
         System.out.println("Der ggT von " + num11 + " und " + num12 + " ist: " + result6); // Erwartet: 0
+
+        int numVid1 = 156;
+        int numVid2 = 66;
+        int resultVid = gcd(numVid1, numVid2);
+        System.out.println("Der ggT von " + numVid1 + " und " + numVid2 + " ist: " + resultVid); // Erwartet: 0
     }
 }
