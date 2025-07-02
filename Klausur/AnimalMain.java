@@ -21,7 +21,7 @@ class Dog extends Animal {
     }
 }
 
-class Main {
+class AnimalMain {
     public static void main(String[] args) {
         // Die Variable ist vom Typ Animal, das Objekt aber ein Dog.
         Animal myAnimal = new Dog(); 
